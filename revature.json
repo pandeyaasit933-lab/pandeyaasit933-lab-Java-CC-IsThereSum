@@ -1,0 +1,30 @@
+{
+  "type": "java",
+  "testFiles": [
+    {
+      "path": "src/test/java/IsThereSumTest.java",
+      "testCases": [
+        {
+          "methodName": "isThereSumTest1",
+          "label": "Verify pair sum exists for target 4",
+          "description": "Tests that the check method correctly identifies that in array {2,2,3,4,5}, two numbers (2+2) sum to the target value of 4"
+        },
+        {
+          "methodName": "isThereSumTest2",
+          "label": "Verify pair sum exists for target 5",
+          "description": "Tests that the check method correctly identifies that in array {2,2,3,4,5}, two numbers (2+3) sum to the target value of 5"
+        },
+        {
+          "methodName": "isThereSumTest3",
+          "label": "Verify no pair sum exists for target 11",
+          "description": "Tests that the check method correctly returns false when no two numbers in array {2,2,3,4,5} can sum to the target value of 11"
+        },
+        {
+          "methodName": "isThereSumTest4",
+          "label": "Verify no pair sum exists for target 10 (no self-addition)",
+          "description": "Tests that the check method correctly returns false for target 10, ensuring that the same element cannot be used twice (5+5 is not allowed)"
+        }
+      ]
+    }
+  ]
+}
